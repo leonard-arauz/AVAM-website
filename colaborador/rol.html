@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+      AVAM | Verificación de rol
+    </title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/colaborador.css">
+  </head>
+  <body>
+    <main class="app">
+      <section class="content">
+        <div class="logo-wrap">
+          <div class="logo-mark">
+            💜
+          </div>
+          <h1>
+            Verificación de rol
+          </h1>
+          <p>
+            Para brindarte una experiencia segura y personalizada, selecciona tu rol.
+          </p>
+        </div>
+        <div data-role-group data-selected="colaborador">
+          <button class="role-card" data-role="adulto">
+            <span class="role-avatar">
+              👵
+            </span>
+            <span>
+              <span class="role-name">
+                Soy Adulto Mayor
+              </span>
+              <span class="role-desc">
+                Necesito ayuda para realizar tareas o mandados.
+              </span>
+            </span>
+          </button>
+          <button class="role-card selected" data-role="colaborador">
+            <span class="role-avatar">
+              🧑
+            </span>
+            <span>
+              <span class="role-name">
+                Soy Colaborador
+              </span>
+              <span class="role-desc">
+                Quiero ayudar y ganar ingresos realizando servicios.
+              </span>
+            </span>
+            <span class="role-check">
+              ✓
+            </span>
+          </button>
+        </div>
+        <div class="lock-note">
+          <span>
+            🔒
+          </span>
+          <span>
+            Tu rol es importante para mantener un entorno seguro para todos.
+          </span>
+        </div>
+        <button class="btn" data-role-continue>
+          Continuar
+        </button>
+      </section>
+    </main>
+    <script src="../js/app.js">
+    </script>
+  </body>
+</html>

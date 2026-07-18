@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+      AVAM | Mis servicios
+    </title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/colaborador.css">
+  </head>
+  <body>
+    <main class="app">
+      <header class="topbar start">
+        <span>
+          Mis servicios
+        </span>
+        <button class="icon-btn" data-toast="Filtros de servicios" aria-label="Opciones">
+          ⋮
+        </button>
+      </header>
+      <section class="content">
+        <div class="tabs">
+          <button class="tab" data-filter="activo">
+            Activos
+          </button>
+          <button class="tab active" data-filter="completado">
+            Completados
+          </button>
+        </div>
+        <button class="job-card" data-status="activo" data-go="progreso.html" hidden>
+          <div class="job-title">
+            🧴 Comprar medicamentos
+          </div>
+          <div class="job-sub">
+            Farmacia Metro · En progreso
+          </div>
+          <div class="job-price">
+            $8.00
+          </div>
+        </button>
+        <button class="job-card" data-status="completado" data-toast="Detalle del servicio completado">
+          <div class="job-title">
+            🧴 Comprar medicamentos
+          </div>
+          <div class="job-sub">
+            Farmacia Metro · Completado 16/05
+          </div>
+          <div class="job-price">
+            $8.00 · ⭐ 5.0
+          </div>
+        </button>
+        <button class="job-card" data-status="completado" data-toast="Detalle del servicio completado">
+          <div class="job-title">
+            🛒 Hacer supermercado
+          </div>
+          <div class="job-sub">
+            Super Xtra · Completado 17/05
+          </div>
+          <div class="job-price">
+            $12.00 · ⭐ 4.8
+          </div>
+        </button>
+        <button class="job-card" data-status="completado" data-toast="Detalle del servicio completado">
+          <div class="job-title">
+            🧾 Pagar recibo de luz
+          </div>
+          <div class="job-sub">
+            Edificio Plaza 2000 · 15/05
+          </div>
+          <div class="job-price">
+            $5.00 · ⭐ 5.0
+          </div>
+        </button>
+      </section>
+      <nav class="navbar">
+        <a class="navitem" href="inicio.html">
+          <span class="dot">
+            🏠
+          </span>
+          Inicio
+        </a>
+        <a class="navitem active" href="servicios.html">
+          <span class="dot">
+            🧰
+          </span>
+          Mis servicios
+        </a>
+        <a class="navitem" href="mensajes.html">
+          <span class="dot">
+            💬
+          </span>
+          Mensajes
+        </a>
+        <a class="navitem" href="perfil.html">
+          <span class="dot">
+            👤
+          </span>
+          Perfil
+        </a>
+      </nav>
+    </main>
+    <script src="../js/app.js">
+    </script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+      AVAM | Chat
+    </title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/adulto-mayor.css">
+  </head>
+  <body>
+    <main class="app">
+      <header class="topbar">
+        <a class="icon-btn" href="inicio.html" aria-label="Volver">
+          ‹
+        </a>
+        <span class="topbar-title">
+          Chat con AVAM
+        </span>
+        <button class="icon-btn" data-toast="Opciones de conversación" aria-label="Opciones">
+          ⋮
+        </button>
+      </header>
+      <section class="content">
+        <div class="messages">
+          <div class="bubble outgoing">
+            Necesito que alguien compre mis medicamentos porque tengo una cita mañana.
+          </div>
+          <div class="bubble incoming">
+            Con gusto, Juan 🙂 ¿En qué farmacia deseas comprarlos?
+          </div>
+          <div class="bubble outgoing">
+            En la Farmacia Metro de Bella Vista.
+          </div>
+          <div class="bubble incoming">
+            Perfecto. ¿A qué hora necesitas que te los entreguen?
+          </div>
+        </div>
+        <div class="composer">
+          <input aria-label="Respuesta" placeholder="Escribe tu respuesta...">
+          <button class="send" data-send aria-label="Enviar">
+            ➤
+          </button>
+        </div>
+        <button class="btn" data-go="solicitud.html">
+          Preparar solicitud
+        </button>
+      </section>
+    </main>
+    <script src="../js/app.js">
+    </script>
+  </body>
+</html>
