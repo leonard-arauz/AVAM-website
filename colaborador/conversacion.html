@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AVAM | Conversación</title>
+    <link rel="stylesheet" href="../css/base.css?v=20260719-2">
+    <link rel="stylesheet" href="../css/colaborador.css">
+  </head>
+  <body data-conversation-role="colaborador">
+    <main class="app">
+      <header class="topbar">
+        <a class="icon-btn" href="mensajes.html" aria-label="Volver">‹</a>
+        <div class="conversation-heading">
+          <span class="avatar" data-conversation-avatar>AV</span>
+          <span class="conversation-heading-text">
+            <span class="conversation-heading-name" data-conversation-name>Conversación</span>
+            <span class="conversation-heading-status" data-conversation-status>AVAM</span>
+          </span>
+        </div>
+        <button class="icon-btn" data-toast="Información de la conversación" aria-label="Información">ⓘ</button>
+      </header>
+      <section class="content">
+        <div class="conversation-date">Hoy</div>
+        <div class="messages" data-conversation-messages></div>
+        <div class="conversation-note">Vista de demostración · Conversación de solo lectura</div>
+      </section>
+      <div class="readonly-composer" aria-label="Mensajería deshabilitada">
+        <input type="text" placeholder="Escritura deshabilitada en esta demostración" disabled>
+        <button class="send" aria-label="Enviar deshabilitado" disabled>➤</button>
+      </div>
+    </main>
+    <script src="../js/app.js?v=20260719-2"></script>
+  </body>
+</html>
