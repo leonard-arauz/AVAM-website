@@ -13,3 +13,12 @@ $$('.toggle').forEach(toggle=>toggle.addEventListener('click',()=>{toggle.classL
 $$('[data-filter]').forEach(tab=>tab.addEventListener('click',()=>{$$('[data-filter]').forEach(item=>item.classList.remove('active'));tab.classList.add('active');$$('[data-status]').forEach(card=>card.hidden=card.dataset.status!==tab.dataset.filter)}));
 $$('[data-search]').forEach(input=>input.addEventListener('input',()=>{const query=input.value.toLowerCase();$$('[data-search-item]').forEach(item=>item.hidden=!item.textContent.toLowerCase().includes(query))}));
 $$('[data-chat]').forEach(item=>item.addEventListener('click',()=>toast(`Abriendo conversación con ${item.dataset.chat}`)));
+const visualViewport=window.visualViewport;
+let viewportBaseline=visualViewport?.height||window.innerHeight;
+function syncVisualViewport(){const height=visualViewport?.height||window.innerHeight;const fieldFocused=document.activeElement?.matches('input, textarea, [contenteditable="true"]');if(!fieldFocused)viewportBaseline=Math.max(viewportBaseline,height);const keyboardOpen=Boolean(fieldFocused&&viewportBaseline-height>120);document.documentElement.style.setProperty('--visual-viewport-height',`${Math.round(height)}px`);document.body.classList.toggle('keyboard-open',keyboardOpen)}
+visualViewport?.addEventListener('resize',syncVisualViewport);
+visualViewport?.addEventListener('scroll',syncVisualViewport);
+window.addEventListener('orientationchange',()=>setTimeout(()=>{viewportBaseline=visualViewport?.height||window.innerHeight;syncVisualViewport()},250));
+document.addEventListener('focusin',()=>setTimeout(syncVisualViewport,50));
+document.addEventListener('focusout',()=>setTimeout(syncVisualViewport,250));
+syncVisualViewport();
