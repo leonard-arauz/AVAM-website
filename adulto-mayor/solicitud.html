@@ -6,7 +6,7 @@
     <title>
       AVAM | Solicitud creada
     </title>
-    <link rel="stylesheet" href="../css/base.css?v=20260719-2">
+    <link rel="stylesheet" href="../css/base.css?v=20260719-4">
     <link rel="stylesheet" href="../css/adulto-mayor.css">
   </head>
   <body>
@@ -38,7 +38,7 @@
               <b>
                 Categoría
               </b>
-              Compra de medicamentos
+              <span data-request-category>Compra de medicamentos</span>
             </div>
           </div>
           <div class="info-row">
@@ -46,10 +46,10 @@
               📍
             </span>
             <div>
-              <b>
+              <b data-request-location-label>
                 Farmacia
               </b>
-              Farmacia Metro - Bella Vista
+              <span data-request-location>Farmacia Metro - Bella Vista</span>
             </div>
           </div>
           <div class="info-row">
@@ -60,7 +60,7 @@
               <b>
                 Entrega
               </b>
-              Antes de las 5:00 p.m.
+              <span data-request-time>Antes de las 5:00 p.m.</span>
             </div>
           </div>
           <div class="info-row">
@@ -71,14 +71,14 @@
               <b>
                 Pago ofrecido
               </b>
-              $8.00
+              <span data-request-payment>$8.00</span>
             </div>
           </div>
         </div>
         <button class="btn" data-go="seguimiento.html">
           Publicar solicitud
         </button>
-        <button class="btn outline" data-go="chat.html">
+        <button class="btn outline" data-edit-request>
           Editar información
         </button>
       </section>
@@ -109,7 +109,7 @@
         </a>
       </nav>
     </main>
-    <script src="../js/app.js?v=20260719-2">
+    <script src="../js/app.js?v=20260719-4">
     </script>
   </body>
 </html>
